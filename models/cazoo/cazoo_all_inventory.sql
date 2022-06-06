@@ -6,7 +6,7 @@ with
 rds_inventory as (
 
 select *
-from raw.public.static_cazoo_rds_inventory
+from {{var('raw_db')}}.public.static_cazoo_rds_inventory
 ),
 
 s3_inventory as (

@@ -1,7 +1,7 @@
 with raw_data as (
 
 select *
-from bod_dev_database.public.cazoo_s3_storage
+from {{var('raw_db')}}.public.cazoo_s3_storage
 ),
 
 final as (
